@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&T Fabrics | Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/ntlogo2.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Self Elegance!!<br>A New Look!</h1>
+                    <p> Give your self a Unique look with beautiful blouse laces, Georges and Wrappers Straight from
+                        India and Vietnam</p>
+                    <a href="" class="btn">Explore Now &#8594; </a>
+                </div>
+                <div class="col-2">
+                    <img src="images/homepage.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Featured Categories------------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/nthomepage1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/nthomepage2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/nthomepage4.JPG">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Featured Product------------>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/Lace.jpg">
+                <h4>Green Lace</h4>
+                <div class="rating"></div>
+                <p>₦50,000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Print.jpg">
+                <h4>Nigerian Wax</h4>
+                <div class="rating"></div>
+                <p>₦5,000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Pink Slippers.jpg">
+                <h4>Pink Slippers</h4>
+                <div class="rating"></div>
+                <p>₦15,000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Jewelery.jpg">
+                <h4>Red Marbel Necklace</h4>
+                <div class="rating"></div>
+                <p>₦10,000</p>
+            </div>
+        </div>
+        <h2 class="title">Latest product</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/Pink Lace.jpg">
+                <h4>Pink Lace</h4>
+                <div class="rating"></div>
+                <p>₦35,000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Gold Lace.jpg">
+                <h4>Gold lace</h4>
+                <div class="rating"></div>
+                <p>₦45,000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Blue Lace.jpg">
+                <h4>Blue lace</h4>
+                <div class="rating"></div>
+                <p>₦55,000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Gold slippers.jpg">
+                <h4>Gold Slippers</h4>
+                <div class="rating"></div>
+                <p>₦15,000</p>
+            </div>
+        </div>
+
+        <!----Footer------>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Downlaod Our App</h3>
+                        <p>Downlaod App for Andriod and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/ntlogo2.png">
+                        <p>Our Purpose is make you look beautiful with our</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Joim Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyrigt 2021 - N&T Fabrics</p>
+            </div>
+        </div>
+        <!---------js for toggle menu---------->
+        <script>
+            var MenuItems = document.getElementsById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px"
+                }
+
+            }
+        </script>
+</body>
+
+</html>
